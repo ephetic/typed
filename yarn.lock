@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@ephetic/functional@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@ephetic/functional/-/functional-0.1.7.tgz#8dc5ed9d4de7272061ce05b5cbb8324894e74456"
+
 balanced-match@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
@@ -66,10 +70,6 @@ fs.realpath@^1.0.0:
 function-bind@^1.0.2, function-bind@^1.1.0, function-bind@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
-
-functional@ephetic/functional:
-  version "0.1.1"
-  resolved "https://codeload.github.com/ephetic/functional/tar.gz/4a90d4e282410d22cb0f5a8b280e549d67bfb1aa"
 
 glob@~7.1.1:
   version "7.1.1"

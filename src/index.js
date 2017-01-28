@@ -1,4 +1,4 @@
-const { matcher: m, partial: p } = require('functional')
+const { matcher: m, partial: p } = require('@ephetic/functional')
 
 const typed = (argTypes, retType, fn) => {
   if (!typed.enabled) return fn;

@@ -1,11 +1,10 @@
 const tape = require('tape')
 const typed = require('../src')
 
-
 tape('Void => any', t => {
   const fn = typed([], typed.Any, n => n)
   t.doesNotThrow(() => fn(), null, 'fn() okay')
-  t.throws(() => fn(1), typed.TypeCheckError, 'fn(1) throws')  //https://github.com/ephetic/functional/issues/12
+  t.throws(() => fn(1), typed.TypeCheckError, 'fn(1) throws')
   t.end()
 })
 
@@ -22,20 +21,3 @@ tape('Any => Any', t => {
   t.doesNotThrow(() => fn('hi'), null, 'fn(String) okay')
   t.end()  
 })
-
-// tape('two Number arguments', t => {
-//   const fn = typed([], [], () => void 0)
-
-// })
-
-// tape('one contract argument', t => {
-//   const fn = typed([], [], () => void 0)
-
-// })
-
-// tape('void arguments', t => {
-//   const fn = typed([], [], () => void 0)
-
-// })
-
-// doesn't wrap function in production

@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ephetic/typed#readme",
   "dependencies": {
-    "functional": "ephetic/functional"
+    "@ephetic/functional": "^0.1.7"
   },
   "devDependencies": {
     "tape": "^4.6.3"
