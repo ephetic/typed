@@ -1,7 +1,7 @@
 const { matcher: m, partial: p } = require('functional')
 
 const typed = (argTypes, retType, fn) => {
-  if (typed.enabled) return fn;
+  if (!typed.enabled) return fn;
   const _fn = m(
     [argTypes, fn], 
     [m, (...args) => { throw new TypeCheckError(`args (${argTypes.map(pp)}) does not match (${args.map(pp)})`) }]
